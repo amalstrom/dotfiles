@@ -1,0 +1,19 @@
+[user]
+	email = amalstrom@gmail.com
+	name = Alec Malstrom
+[rebase]
+    autoStash = true
+[alias]
+    d = diff -w
+    dc = diff --cached -w
+    s = status
+    mondaystandup = "!git log --author $USER --since '3 days ago' --oneline --decorate --all"
+    standup = "!git log --author $USER --since 'yesterday midnight' --oneline --decorate --all"
+    retro = "!git log --author $USER --since '14 days ago' --oneline --decorate --all"
+    month = "!git log --author $USER --since '30 days ago' --oneline --decorate --all"
+    try = "!git rpull && try"
+    tryp = "!git rpull && try -P"
+    try-config = "!git rpull && try-config"
+    try-configp = "!git rpull && try-config -P"
+[github]
+	user = amalstrom
